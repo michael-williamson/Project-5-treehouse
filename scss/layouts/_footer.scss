@@ -1,0 +1,83 @@
+/**********************************
+footer styling
+***********************************/
+
+footer {
+  padding-top: 10%; 
+  margin-bottom: 15%;
+}
+
+
+
+///////////Sass Nesting 
+
+.bottom-nav {
+ 
+  @extend %clearfix; 
+  border-top: solid 1px grey; 
+  margin: 0 3%;  
+ 
+  nav {                    //------->  @include is a mixin for for media query min-width 768px
+      display: none; 
+    
+    @include tablet {
+    
+    display: inline-block;
+    float: right; 
+    font-weight: bolder;  
+    vertical-align: top; 
+    width: 70%; 
+    text-align: center;
+    font-size: .8em;
+    position: relative; 
+    top:.6em; 
+  }
+    } 
+    
+   h3 {
+      float: left; 
+    
+     @include tablet   {
+  
+    vertical-align: bottom;
+    display:inline-block;
+  }
+    }
+    
+     h4 {
+      float: right; 
+    
+        @include tablet {
+     
+      display: none;
+     }
+      }
+  
+  ul {
+        @include tablet   {
+   
+    width: 100%; 
+    padding-left: 0;
+    text-align: right; 
+    vertical-align: middle; 
+  }
+    }
+  
+   li {
+    
+       @include tablet {
+      
+    display: inline-block;
+    list-style: none; 
+    padding: 0 1.5%; 
+  }
+   }
+    
+    a {
+     
+      text-decoration: none; 
+      color: black; 
+    }
+
+}
+
