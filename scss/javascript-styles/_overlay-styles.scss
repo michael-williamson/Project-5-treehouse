@@ -1,0 +1,97 @@
+/**************************************
+ Javascript Add-ons
+**************************************/
+
+#overlay {
+  position: fixed; 
+  background-color: rgba(0,0,0, .90);
+  top: 0;
+  bottom: 0;
+  right: 0; 
+  left: 0; 
+  display:none;
+  text-align:center; 
+}
+
+
+#overlay img {
+  margin-top: 70px; 
+  height: 80%; 
+  width: 80%; 
+ }
+
+#imgGalleryDiv {
+  margin: auto; 
+}
+
+#captionTextDiv {
+  width: 80%; 
+  background-color: rgba(217, 217, 217, .1); 
+  height: 125px; 
+  border-radius: 50% 50% 50% 50%;
+  text-align: center; 
+  margin: 10px auto 0;
+  border: solid 1px black; 
+  border-bottom: solid 25px rgba(0,0,0, .65); 
+}
+
+#captionText {
+  max-width: 80%; 
+  margin: 15px auto 0; 
+  font-size: 1em; 
+  font-family: sans-serif;
+  font-weight: 400;
+  border-radius:  50%; 
+  padding-bottom: 30px; 
+  padding-top: 10px; 
+  text-shadow: 3px 3px black; 
+  text-align: center; 
+  color: white; 
+}
+
+#btnNext, #btnPrev {
+   cursor: pointer; 
+    color: rgba(255,255,255, .99); 
+    background-color:  rgba(0,0,0, .01); 
+    border: none; 
+    height: 70px;
+    width: 70px;
+    font-size: 60px; 
+    outline: 0;
+}
+
+#btnPrev {
+  position: relative;
+   bottom: 75% ;
+  right: 25%;
+}
+
+#btnNext {
+  position: relative; 
+  bottom: 75%;
+  left: 25% ;
+}
+
+#btnExit {
+  position: absolute; 
+  left: 88% ; 
+  bottom: 88%; 
+  border-radius: 50%;
+  background-color: black;
+  border: none; 
+  color: white; 
+  width: 15px;
+  height: 15px; 
+  font-size: 9px; 
+  cursor:pointer;
+  outline: 0; 
+}
+
+.escTxt {
+  top: 0 ;
+  left: 2%; 
+  color: white; 
+  position: absolute; 
+  
+}
+

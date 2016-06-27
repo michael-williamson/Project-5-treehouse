@@ -1,0 +1,20 @@
+/**********************************
+img gallery container styling
+***********************************/
+
+.container-section {
+  background-color: white; 
+  height: 100%; 
+  padding-bottom: 10%;
+}
+
+.container-gallery {
+  padding: 0 3% 2em;  
+  
+  @include tablet {
+    text-align: center; 
+    padding: 0 2%; 
+    vertical-align: middle;
+  }
+}
+
