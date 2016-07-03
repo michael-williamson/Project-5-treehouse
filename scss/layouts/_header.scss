@@ -4,20 +4,21 @@ header styling and navigation styling
 
 header {                              //nested elements inside of header
   @extend %clearfix; 
-  background-color: $grey ;
+  background-color: $lightgrey ;
   
   @include tablet {
        padding-bottom: 8%; 
   }
-  
-
-
  
-  
   ul {
   list-style:none; 
   @extend %centered;  
-  padding-left: 0; 
+  padding-left: 0;
+    
+    @include desktop {
+        text-align: right; 
+        padding-right: 0; 
+      } 
   
 }
   
@@ -31,7 +32,22 @@ header {                              //nested elements inside of header
       display: inline-block;
       background-color: inherit;
     }
+    
+     @include desktop {
+        font-size: 1em; 
+        margin: 0 4%; 
+      } 
 }
+  
+  nav {
+  
+   @include desktop {
+        float: right; 
+        width: 50%;
+        margin-right: 3%;
+        margin-top: 1.55%; 
+      } 
+  }
   
   a {
   text-decoration: none; 
@@ -62,6 +78,14 @@ header {                              //nested elements inside of header
       line-height: 1.5em; 
       font-size: 1em + .15; 
     }
+    
+    @include desktop {
+        font-size: 1.2em; 
+        clear: left; 
+        text-align: left; 
+        margin-top: 2%;
+        float: left; 
+      } 
 }
 
   img {
@@ -76,13 +100,25 @@ header {                              //nested elements inside of header
         padding: 0;
         margin-right: 3%; 
     }
+    
+    @include desktop {
+        clear: both; 
+        width: 30%; 
+        margin-top: 2%; 
+        margin-bottom: 4%; 
+      } 
 }
 
 }
 
-h1 {
-  @extend  %centered;  
-}
+    h1 {
+      @extend  %centered;  
+      
+      @include desktop {
+          float: left; 
+          margin-left: 3%; 
+      }
+    }
 
 
 .header-paragraph {

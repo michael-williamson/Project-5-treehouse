@@ -8,6 +8,14 @@ img gallery container styling
   background-color: white;
   height: 100%;
   padding-bottom: 10%; }
+  @media (min-width: 1024px) {
+    .container-section {
+      padding-bottom: 7%; } }
+
+@media (min-width: 1024px) {
+  .contact-list-item {
+    margin-right: 0;
+    /*  lining nav up with img*/ } }
 
 .container-gallery {
   padding: 0 3% 2em; }
@@ -29,14 +37,32 @@ img gallery container styling
   left: 0;
   display: none;
   text-align: center; }
+  @media (min-width: 480px) {
+    #overlay {
+      background-color: rgba(0, 0, 0, 0.85); } }
 
 #overlay img {
   margin-top: 70px;
   height: 80%;
   width: 80%; }
+  @media (min-width: 480px) {
+    #overlay img {
+      height: 60%;
+      width: 400px; } }
+  @media (min-width: 1024px) {
+    #overlay img {
+      height: 60%;
+      width: 700px;
+      border: solid 70px rgba(0, 0, 0, 0.25);
+      border-top: solid 45px rgba(0, 0, 0, 0.55);
+      border-bottom: solid 45px rgba(0, 0, 0, 0.65); } }
 
 #imgGalleryDiv {
   margin: auto; }
+  @media (min-width: 1024px) {
+    #imgGalleryDiv {
+      max-width: 1000px;
+      margin: auto; } }
 
 #captionTextDiv {
   width: 80%;
@@ -47,6 +73,14 @@ img gallery container styling
   margin: 10px auto 0;
   border: solid 1px black;
   border-bottom: solid 25px rgba(0, 0, 0, 0.65); }
+  @media (min-width: 480px) {
+    #captionTextDiv {
+      height: 100px;
+      margin: 15px auto 0; } }
+  @media (min-width: 1024px) {
+    #captionTextDiv {
+      width: 800px;
+      margin: 0px auto 0; } }
 
 #captionText {
   max-width: 80%;
@@ -60,6 +94,9 @@ img gallery container styling
   text-shadow: 3px 3px black;
   text-align: center;
   color: white; }
+  @media (min-width: 1024px) {
+    #captionText {
+      max-width: 600px; } }
 
 #btnNext, #btnPrev {
   cursor: pointer;
@@ -75,11 +112,31 @@ img gallery container styling
   position: relative;
   bottom: 75%;
   right: 25%; }
+  @media (min-width: 480px) {
+    #btnPrev {
+      position: relative;
+      bottom: 280px;
+      right: 175px; } }
+  @media (min-width: 1024px) {
+    #btnPrev {
+      position: relative;
+      bottom: 380px;
+      right: 275px; } }
 
 #btnNext {
   position: relative;
   bottom: 75%;
   left: 25%; }
+  @media (min-width: 480px) {
+    #btnNext {
+      position: relative;
+      bottom: 275px;
+      left: 190px; } }
+  @media (min-width: 1024px) {
+    #btnNext {
+      position: relative;
+      bottom: 375px;
+      left: 290px; } }
 
 #btnExit {
   position: absolute;
@@ -94,12 +151,28 @@ img gallery container styling
   font-size: 9px;
   cursor: pointer;
   outline: 0; }
+  @media (min-width: 480px) {
+    #btnExit {
+      position: relative;
+      left: 142px;
+      bottom: 420px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none; } }
+  @media (min-width: 1024px) {
+    #btnExit {
+      left: 280px;
+      bottom: 600px;
+      background-color: black; } }
 
 .escTxt {
   top: 0;
   left: 2%;
   color: white;
   position: absolute; }
+  @media (min-width: 480px) {
+    .escTxt {
+      left: 2%; } }
 
 /**********************************
 body and main sizing
@@ -107,7 +180,10 @@ body and main sizing
 body {
   font-family: sans-serif;
   margin: 0;
-  background: lightgrey; }
+  background-color: lightgrey; }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 1.2em; } }
 
 header ul, header p, h1, main h2, main p, h3, footer p {
   text-align: center; }
@@ -123,6 +199,9 @@ footer styling
 footer {
   padding-top: 10%;
   margin-bottom: 15%; }
+  @media (min-width: 1024px) {
+    footer {
+      padding-top: 7%; } }
 
 .bottom-nav {
   border-top: solid 1px grey;
@@ -177,6 +256,10 @@ header {
   header ul {
     list-style: none;
     padding-left: 0; }
+    @media (min-width: 1024px) {
+      header ul {
+        text-align: right;
+        padding-right: 0; } }
   header li {
     display: block;
     padding: 0;
@@ -186,6 +269,16 @@ header {
       header li {
         display: inline-block;
         background-color: inherit; } }
+    @media (min-width: 1024px) {
+      header li {
+        font-size: 1em;
+        margin: 0 4%; } }
+  @media (min-width: 1024px) {
+    header nav {
+      float: right;
+      width: 50%;
+      margin-right: 3%;
+      margin-top: 1.55%; } }
   header a {
     text-decoration: none;
     color: black;
@@ -209,6 +302,13 @@ header {
         text-align: left;
         line-height: 1.5em;
         font-size: 1.15em; } }
+    @media (min-width: 1024px) {
+      header p {
+        font-size: 1.2em;
+        clear: left;
+        text-align: left;
+        margin-top: 2%;
+        float: left; } }
   header img {
     max-height: 100%;
     max-width: 100%;
@@ -220,6 +320,17 @@ header {
         width: 45%;
         padding: 0;
         margin-right: 3%; } }
+    @media (min-width: 1024px) {
+      header img {
+        clear: both;
+        width: 30%;
+        margin-top: 2%;
+        margin-bottom: 4%; } }
+
+@media (min-width: 1024px) {
+  h1 {
+    float: left;
+    margin-left: 3%; } }
 
 .header-paragraph {
   text-align: left; }
@@ -256,6 +367,10 @@ main h2 {
       position: relative;
       display: inline-block;
       margin: 0 .5% 2%; } }
+  @media (min-width: 1024px) {
+    .gallery-div {
+      width: 30%;
+      margin: 0 1%; } }
 
 main img {
   max-height: 100%;

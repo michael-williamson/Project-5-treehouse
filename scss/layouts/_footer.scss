@@ -5,6 +5,10 @@ footer styling
 footer {
   padding-top: 10%; 
   margin-bottom: 15%;
+  
+  @include desktop {
+       padding-top: 7%;
+  }
 }
 
 
@@ -14,7 +18,7 @@ footer {
 .bottom-nav {
  
   @extend %clearfix; 
-  border-top: solid 1px grey; 
+  border-top: solid 1px $grey; 
   margin: 0 3%;  
  
   nav {                    //------->  @include is a mixin for for media query min-width 768px
@@ -27,7 +31,7 @@ footer {
     font-weight: bolder;  
     vertical-align: top; 
     width: 70%; 
-    text-align: center;
+    text-align: center; 
     font-size: .8em;
     position: relative; 
     top:.6em; 
@@ -48,8 +52,7 @@ footer {
       float: right; 
     
         @include tablet {
-     
-      display: none;
+           display: none;
      }
       }
   
@@ -76,7 +79,7 @@ footer {
     a {
      
       text-decoration: none; 
-      color: black; 
+      color: $black; 
     }
 
 }

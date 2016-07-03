@@ -2,7 +2,8 @@
 
 $black: black; 
 $white: white; 
-$grey: lightgrey; 
+$lightgrey: lightgrey; 
+$grey: grey; 
 
 // Font Variables 
 
@@ -14,6 +15,7 @@ $font-size: 1em;
  
 
 // Media Queries 
+
 
 $brk-narrow: 768px;
 $brk-wide: 1024px;

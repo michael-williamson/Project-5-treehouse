@@ -39,12 +39,7 @@ section styling
 }
 
 
-  
-  
-  
-  
-  
-  .gallery-div {
+.gallery-div {
   height: 100%; 
   vertical-align: top;
  
@@ -55,6 +50,12 @@ section styling
     display: inline-block;
     margin: 0 .5% 2%; 
      }
+  
+         @include desktop {
+            width: 30%; 
+            margin: 0 1%;
+      } 
+      
   }
   
 

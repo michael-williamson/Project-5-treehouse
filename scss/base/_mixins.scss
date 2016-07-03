@@ -4,3 +4,17 @@
   @content; 
 }
 }
+
+@mixin tablet-overlay {
+
+  @media (min-width: 480px) {
+  @content; 
+}
+}
+
+@mixin desktop {
+
+  @media (min-width: #{$brk-wide}) {
+  @content; 
+}
+}
