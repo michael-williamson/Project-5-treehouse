@@ -21,31 +21,31 @@ footer {
   border-top: solid 1px $grey; 
   margin: 0 3%;  
  
-  nav {                    //------->  @include is a mixin for for media query min-width 768px
+     nav {                  
       display: none; 
     
-    @include tablet {
-    
-    display: inline-block;
-    float: right; 
-    font-weight: bolder;  
-    vertical-align: top; 
-    width: 70%; 
-    text-align: center; 
-    font-size: .8em;
-    position: relative; 
-    top:.6em; 
-  }
+        @include tablet {
+        
+        display: inline-block;
+        float: right; 
+        font-weight: bolder;  
+        vertical-align: top; 
+        width: 70%; 
+        text-align: center; 
+        font-size: $font-size - .2;
+        position: relative; 
+        top:.6em; 
+      }
     } 
     
-   h3 {
+     h3 {
       float: left; 
     
      @include tablet   {
   
-    vertical-align: bottom;
-    display:inline-block;
-  }
+        vertical-align: bottom;
+        display:inline-block;
+      }
     }
     
      h4 {
@@ -56,24 +56,24 @@ footer {
      }
       }
   
-  ul {
+     ul {
         @include tablet   {
    
-    width: 100%; 
-    padding-left: 0;
-    text-align: right; 
-    vertical-align: middle; 
-  }
+        width: 100%; 
+        padding-left: 0;
+        text-align: right; 
+        vertical-align: middle; 
+      }
     }
   
-   li {
+     li {
     
        @include tablet {
       
-    display: inline-block;
-    list-style: none; 
-    padding: 0 1.5%; 
-  }
+        display: inline-block;
+        list-style: none; 
+        padding: 0 1.5%; 
+      }
    }
     
     a {
